@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom right, gray, lightblue, teal, pink)
+}
+.image-gallery__title {
+font-size: 38px;
+text-align: center;
+}
+.image-card {
+    display: inline-block;
+    padding: 20px;
+    background-color:rgb(251, 188, 172);
+    box-shadow: 5px 6px 5px 4px rgba(103, 244, 138, 0.4)
+}
+.image-card__image {
+    height: 180px;
+    width: 220px;
+}
+.image-card__caption {
+    font-size: 18px;
+    font-weight: 700;
+    text-color: white;
+    text-align: center;
+    margin-top: 12px;
+    letter-spacing: 0.0625rem;
+}
+.image-card:nth-child(even) {
+    transform: rotate(4deg)
+}
+.image-card:nth-child(odd) {
+    transform: rotate(-4deg)
+}
+.image-card:hover {
+    transform: scale(1.25);
+}
